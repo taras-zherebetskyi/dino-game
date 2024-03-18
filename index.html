@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Games by Toros</title>
+	<link rel="stylesheet" href="css/styleIndex.css">
+	<link rel="shortcut icon" href="img/index/icon.png" type="image/png">
+</head>
+
+<body>
+	<header class="header1">
+		<nav>
+			<button class="butt" id="help">Information
+				<script>
+					help.onclick = function () {
+						document.location.href = "games/help.html";
+					}</script>
+			</button>
+
+		</nav>
+	</header>
+	<spacer width="500" type="vertical">
+		<div>
+			<table class="GameGallery">
+				<thead>
+					<tr>
+						<th>Snake</th>
+						<th>Floppy Bird</th>
+						<th>Run Toros</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="games/gSnake.html"><img src="img/index/gSnake.png" alt="Snake" title="Snake" id="gSnake"></a>
+							<script>
+								gSnake.onmouseover = function () {
+									this.src = 'img/index/gSnake.gif';
+									this.alt = this.title = 'Snake';
+								};
+								gSnake.onmouseout = function () {
+									this.src = 'img/index/gSnake.png';
+									this.alt = this.title = 'Snake';
+								}
+							</script>
+						</td>
+						<td><a href="games/gBird.html"><img src="img/index/gBird.png" alt="Bird" title="Bird" id="gBird"></a>
+							<script>
+								gBird.onmouseover = function () {
+									this.src = 'img/index/gBird.gif';
+									this.alt = this.title = 'Bird';
+								};
+								gBird.onmouseout = function () {
+									this.src = 'img/index/gBird.png';
+									this.alt = this.title = 'Bird';
+								}</script>
+						</td>
+						<td><a href="games/gToros.html"><img src="img/index/gToros.png" alt="Run Toros" title="Run Toros"
+									id="gToros"></a>
+							<script>
+								gToros.onmouseover = function () {
+									this.src = 'img/index/gToros.gif';
+									this.alt = this.title = 'Run Toros';
+								};
+								gToros.onmouseout = function () {
+									this.src = 'img/index/gToros.png';
+									this.alt = this.title = 'Run Toros';
+								}</script>
+						</td>
+				</tbody>
+			</table>
+		</div>
+		<div class="space"></div>
+		<footer align="center">
+			<b>Create by: </b> <img src="img/index/logo.png" alt="logo">
+		</footer>
+</body>
+
+</html>
